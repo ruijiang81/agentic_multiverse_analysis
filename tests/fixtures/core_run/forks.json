@@ -1,0 +1,180 @@
+{
+ "run_id": "core_run",
+ "notes_on_data": [
+  {
+   "claim": "120 firms",
+   "how_verified": "invented",
+   "result": "120"
+  }
+ ],
+ "dimensions": [
+  {
+   "id": "outcome",
+   "label": "outcome",
+   "paper_choice": "outcome_level",
+   "options": [
+    {
+     "id": "outcome_level",
+     "label": "outcome_level",
+     "implementation": "invented: outcome_level",
+     "rationale": "invented",
+     "source": "paper"
+    },
+    {
+     "id": "outcome_log",
+     "label": "outcome_log",
+     "implementation": "invented: outcome_log",
+     "rationale": "invented",
+     "source": "my proposal"
+    },
+    {
+     "id": "outcome_winsor",
+     "label": "outcome_winsor",
+     "implementation": "invented: outcome_winsor",
+     "rationale": "invented",
+     "source": "my proposal"
+    },
+    {
+     "id": "outcome_scaled",
+     "label": "outcome_scaled",
+     "implementation": "invented: outcome_scaled",
+     "rationale": "invented",
+     "source": "my proposal"
+    },
+    {
+     "id": "outcome_alt",
+     "label": "outcome_alt",
+     "implementation": "invented: outcome_alt",
+     "rationale": "invented",
+     "source": "my proposal"
+    }
+   ]
+  },
+  {
+   "id": "sample",
+   "label": "sample",
+   "paper_choice": "sample_full",
+   "options": [
+    {
+     "id": "sample_full",
+     "label": "sample_full",
+     "implementation": "invented: sample_full",
+     "rationale": "invented",
+     "source": "paper"
+    },
+    {
+     "id": "sample_no_fin",
+     "label": "sample_no_fin",
+     "implementation": "invented: sample_no_fin",
+     "rationale": "invented",
+     "source": "my proposal"
+    },
+    {
+     "id": "sample_balanced",
+     "label": "sample_balanced",
+     "implementation": "invented: sample_balanced",
+     "rationale": "invented",
+     "source": "my proposal"
+    },
+    {
+     "id": "sample_post2003",
+     "label": "sample_post2003",
+     "implementation": "invented: sample_post2003",
+     "rationale": "invented",
+     "source": "my proposal"
+    },
+    {
+     "id": "sample_large",
+     "label": "sample_large",
+     "implementation": "invented: sample_large",
+     "rationale": "invented",
+     "source": "my proposal"
+    }
+   ]
+  },
+  {
+   "id": "controls",
+   "label": "controls",
+   "paper_choice": "ctrl_base",
+   "options": [
+    {
+     "id": "ctrl_none",
+     "label": "ctrl_none",
+     "implementation": "invented: ctrl_none",
+     "rationale": "invented",
+     "source": "my proposal"
+    },
+    {
+     "id": "ctrl_base",
+     "label": "ctrl_base",
+     "implementation": "invented: ctrl_base",
+     "rationale": "invented",
+     "source": "paper"
+    }
+   ]
+  },
+  {
+   "id": "fixed_effects",
+   "label": "fixed effects",
+   "paper_choice": "fe_firm_year",
+   "options": [
+    {
+     "id": "fe_firm_year",
+     "label": "fe_firm_year",
+     "implementation": "invented: fe_firm_year",
+     "rationale": "invented",
+     "source": "paper"
+    },
+    {
+     "id": "fe_ind_year",
+     "label": "fe_ind_year",
+     "implementation": "invented: fe_ind_year",
+     "rationale": "invented",
+     "source": "my proposal"
+    }
+   ]
+  },
+  {
+   "id": "window",
+   "label": "window",
+   "paper_choice": "window_5y",
+   "options": [
+    {
+     "id": "window_3y",
+     "label": "window_3y",
+     "implementation": "invented: window_3y",
+     "rationale": "invented",
+     "source": "my proposal"
+    },
+    {
+     "id": "window_5y",
+     "label": "window_5y",
+     "implementation": "invented: window_5y",
+     "rationale": "invented",
+     "source": "paper"
+    }
+   ]
+  },
+  {
+   "id": "inference",
+   "label": "inference",
+   "paper_choice": "inf_cluster_firm",
+   "options": [
+    {
+     "id": "inf_cluster_firm",
+     "label": "inf_cluster_firm",
+     "implementation": "invented: inf_cluster_firm",
+     "rationale": "invented",
+     "source": "paper"
+    },
+    {
+     "id": "inf_robust",
+     "label": "inf_robust",
+     "implementation": "invented: inf_robust",
+     "rationale": "invented",
+     "source": "my proposal"
+    }
+   ]
+  }
+ ]
+}

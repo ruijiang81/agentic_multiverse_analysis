@@ -1,0 +1,8 @@
+{
+ "source": "A synthetic anchor list",
+ "draft_used": "the fixture paper",
+ "ia_outcomes": [
+  {"outcome": "invented outcome (level)", "location": "Tab 2, Col 1"},
+  {"outcome": "invented outcome (log)", "location": "Tab 3, Col 2"}
+ ]
+}

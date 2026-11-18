@@ -1,0 +1,15 @@
+{
+ "g0_tol": 0.10,
+ "grid_workers": 2,
+ "grid_mem_gb": 4,
+ "paper_pdf": "package/paper/synthetic_paper.pdf",
+ "forbidden_sources": [
+  "Invented, Critic (2021), 'A comment on the synthetic paper' (a third-party reanalysis)"
+ ],
+ "data_role_sources": [
+  {"cite": "Invented, Coder (2019), 'Policy adoption dates, recoded'", "paths": ["/data/invented_dates.pdf"]}
+ ],
+ "data_sources_file": null,
+ "analysis_python": null,
+ "repro_language": "Python"
+}

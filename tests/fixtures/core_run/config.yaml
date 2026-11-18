@@ -1,0 +1,59 @@
+# Synthetic fixture for tests/test_core.py. Every name and number is invented.
+run_id: core_run
+paper:
+  title: "A Synthetic Paper for Testing the Pipeline"
+  authors: "Doe, Jane and Roe, Richard"
+  venue: "Journal of Invented Results"
+  year: 2020
+  doi_or_url: "https://example.org/synthetic-paper"
+research_question: Does the invented policy shock raise the invented outcome of treated firms?
+published_conclusion:
+  statement: The shock raises the outcome of treated firms by 0.050 (significant at the 1% level).
+  direction: positive
+  significance: "p < 0.01, two-sided"
+headline_estimates:
+  - id: h1
+    location: "Table 2, col. (1), row Treat x Post"
+    ia_location: "Tab 2, Col 1"
+    quantity: "Treat x Post"
+    value: 0.050
+    std_error: 0.012
+    t_or_p: 4.17
+    n_obs: 1200
+    target_type: published
+  - id: h2
+    location: "Table 2, col. (1), adjusted R-squared"
+    quantity: adjusted R-squared
+    value: 0.31
+    gating: false
+    target_type: published
+design: >
+  Firm-year panel of 120 invented firms, 2001-2010. Treat x Post difference in
+  differences with firm and year fixed effects; standard errors clustered by firm.
+authors_fork_choices:
+  - dimension: outcome
+    option: outcome_level
+    where: Table 2 note
+  - dimension: sample
+    option: sample_full
+    where: Section 3
+  - dimension: controls
+    option: ctrl_base
+    where: Table 2 note
+  - dimension: fixed_effects
+    option: fe_firm_year
+    where: Table 2 note
+  - dimension: window
+    option: window_5y
+    where: Section 3
+data:
+  paths:
+    - path: package/data/panel.csv
+      what: invented firm-year panel
+      quirks: none
+  forbidden:
+    - benchmark/
+compute:
+  mem_cap_gb: 4
+  seed: 12345
+notes: Fully synthetic fixture; nothing here describes a real paper.

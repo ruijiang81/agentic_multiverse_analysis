@@ -1,0 +1,23 @@
+# Python bytecode and build products
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+*.whl
+
+# test and tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# virtual environments
+.venv/
+venv/
+
+# run directories: they can hold licensed data and agent transcripts; never commit them
+runs/
+ama-runs/
+

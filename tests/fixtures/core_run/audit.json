@@ -1,0 +1,259 @@
+{
+ "run_id": "core_run",
+ "checks_run": [
+  {
+   "question": "number of clusters",
+   "how": "invented",
+   "answer": "120"
+  }
+ ],
+ "verdicts": [
+  {
+   "option_id": "outcome_level",
+   "dimension": "outcome",
+   "verdict": "VALID",
+   "rubric_condition": "S1",
+   "reason": "invented reason for outcome_level",
+   "citation": "invented",
+   "retain_as_diagnostic": false,
+   "distinct_estimand": false
+  },
+  {
+   "option_id": "outcome_log",
+   "dimension": "outcome",
+   "verdict": "VALID",
+   "rubric_condition": "S1",
+   "reason": "invented reason for outcome_log",
+   "citation": "invented",
+   "retain_as_diagnostic": false,
+   "distinct_estimand": false
+  },
+  {
+   "option_id": "outcome_winsor",
+   "dimension": "outcome",
+   "verdict": "VALID",
+   "rubric_condition": "S1",
+   "reason": "invented reason for outcome_winsor",
+   "citation": "invented",
+   "retain_as_diagnostic": false,
+   "distinct_estimand": false
+  },
+  {
+   "option_id": "outcome_scaled",
+   "dimension": "outcome",
+   "verdict": "VALID",
+   "rubric_condition": "S1",
+   "reason": "invented reason for outcome_scaled",
+   "citation": "invented",
+   "retain_as_diagnostic": false,
+   "distinct_estimand": false
+  },
+  {
+   "option_id": "outcome_alt",
+   "dimension": "outcome",
+   "verdict": "QUESTIONABLE",
+   "rubric_condition": "S1",
+   "reason": "invented reason for outcome_alt",
+   "citation": "invented",
+   "retain_as_diagnostic": false,
+   "distinct_estimand": false
+  },
+  {
+   "option_id": "sample_full",
+   "dimension": "sample",
+   "verdict": "VALID",
+   "rubric_condition": "S1",
+   "reason": "invented reason for sample_full",
+   "citation": "invented",
+   "retain_as_diagnostic": false,
+   "distinct_estimand": false
+  },
+  {
+   "option_id": "sample_no_fin",
+   "dimension": "sample",
+   "verdict": "VALID",
+   "rubric_condition": "S1",
+   "reason": "invented reason for sample_no_fin",
+   "citation": "invented",
+   "retain_as_diagnostic": false,
+   "distinct_estimand": false
+  },
+  {
+   "option_id": "sample_balanced",
+   "dimension": "sample",
+   "verdict": "VALID",
+   "rubric_condition": "S1",
+   "reason": "invented reason for sample_balanced",
+   "citation": "invented",
+   "retain_as_diagnostic": false,
+   "distinct_estimand": false
+  },
+  {
+   "option_id": "sample_post2003",
+   "dimension": "sample",
+   "verdict": "VALID",
+   "rubric_condition": "S1",
+   "reason": "invented reason for sample_post2003",
+   "citation": "invented",
+   "retain_as_diagnostic": false,
+   "distinct_estimand": false
+  },
+  {
+   "option_id": "sample_large",
+   "dimension": "sample",
+   "verdict": "VALID",
+   "rubric_condition": "S1",
+   "reason": "invented reason for sample_large",
+   "citation": "invented",
+   "retain_as_diagnostic": false,
+   "distinct_estimand": false
+  },
+  {
+   "option_id": "ctrl_none",
+   "dimension": "controls",
+   "verdict": "VALID",
+   "rubric_condition": "S1",
+   "reason": "invented reason for ctrl_none",
+   "citation": "invented",
+   "retain_as_diagnostic": false,
+   "distinct_estimand": false
+  },
+  {
+   "option_id": "ctrl_base",
+   "dimension": "controls",
+   "verdict": "VALID",
+   "rubric_condition": "S1",
+   "reason": "invented reason for ctrl_base",
+   "citation": "invented",
+   "retain_as_diagnostic": false,
+   "distinct_estimand": false
+  },
+  {
+   "option_id": "fe_firm_year",
+   "dimension": "fixed_effects",
+   "verdict": "VALID",
+   "rubric_condition": "S1",
+   "reason": "invented reason for fe_firm_year",
+   "citation": "invented",
+   "retain_as_diagnostic": false,
+   "distinct_estimand": false
+  },
+  {
+   "option_id": "fe_ind_year",
+   "dimension": "fixed_effects",
+   "verdict": "VALID",
+   "rubric_condition": "S1",
+   "reason": "invented reason for fe_ind_year",
+   "citation": "invented",
+   "retain_as_diagnostic": false,
+   "distinct_estimand": false
+  },
+  {
+   "option_id": "window_3y",
+   "dimension": "window",
+   "verdict": "VALID",
+   "rubric_condition": "S1",
+   "reason": "invented reason for window_3y",
+   "citation": "invented",
+   "retain_as_diagnostic": false,
+   "distinct_estimand": false
+  },
+  {
+   "option_id": "window_5y",
+   "dimension": "window",
+   "verdict": "VALID",
+   "rubric_condition": "S1",
+   "reason": "invented reason for window_5y",
+   "citation": "invented",
+   "retain_as_diagnostic": false,
+   "distinct_estimand": false
+  },
+  {
+   "option_id": "inf_cluster_firm",
+   "dimension": "inference",
+   "verdict": "VALID",
+   "rubric_condition": "S1",
+   "reason": "invented reason for inf_cluster_firm",
+   "citation": "invented",
+   "retain_as_diagnostic": false,
+   "distinct_estimand": false
+  },
+  {
+   "option_id": "inf_robust",
+   "dimension": "inference",
+   "verdict": "INVALID",
+   "rubric_condition": "S2",
+   "reason": "invented reason for inf_robust",
+   "citation": "invented",
+   "retain_as_diagnostic": false,
+   "distinct_estimand": false
+  }
+ ],
+ "combination_rules": [],
+ "recommended_grid": {
+  "crossed_dimensions": [
+   {
+    "dimension": "outcome",
+    "option_ids": [
+     "outcome_level",
+     "outcome_log",
+     "outcome_winsor",
+     "outcome_scaled",
+     "outcome_alt"
+    ]
+   },
+   {
+    "dimension": "sample",
+    "option_ids": [
+     "sample_full",
+     "sample_no_fin",
+     "sample_balanced",
+     "sample_post2003",
+     "sample_large"
+    ]
+   },
+   {
+    "dimension": "controls",
+    "option_ids": [
+     "ctrl_none",
+     "ctrl_base"
+    ]
+   },
+   {
+    "dimension": "fixed_effects",
+    "option_ids": [
+     "fe_firm_year",
+     "fe_ind_year"
+    ]
+   }
+  ],
+  "held_fixed": [
+   {
+    "dimension": "window",
+    "option_id": "window_3y",
+    "why": "invented: the 5-year window overlaps a second invented shock"
+   },
+   {
+    "dimension": "inference",
+    "option_id": "inf_cluster_firm",
+    "why": "treatment assigned at the firm level"
+   }
+  ],
+  "n_cells": 100
+ },
+ "inference_designation": {
+  "method": "cluster-robust SE by firm",
+  "params": {
+   "cluster": "firm"
+  },
+  "reason": "treatment is assigned at the firm level (invented)",
+  "citation": "Abadie et al. (2023)"
+ },
+ "mandatory_diagnostics": [
+  {
+   "name": "pre-trend",
+   "what": "invented",
+   "why": "invented"
+  }
+ ]
+}

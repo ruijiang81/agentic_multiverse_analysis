@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this tool, please cite the accompanying papers."
+title: "Agentic multiverse analysis (ama-mcp)"
+type: software
+license: MIT
+authors:
+  - family-names: Gao
+    given-names: Ruijiang
+  - family-names: Xiao
+    given-names: Steven Chong
+preferred-citation:
+  type: article
+  title: "An AI-Powered Multiverse Analysis of Empirical Finance Research: Evidence from Reused Natural Experiments"
+  authors:
+    - family-names: Gao
+      given-names: Ruijiang
+    - family-names: Xiao
+      given-names: Steven Chong
+  year: 2026
+  notes: "Working paper"
+references:
+  - type: article
+    title: "When AI Analysts Disagree: Agentic Multiverse Analysis and the Robustness of Empirical Research"
+    authors:
+      - family-names: Gao
+        given-names: Ruijiang
+      - family-names: Xiao
+        given-names: Steven Chong
+    year: 2026
+    notes: "Working paper"

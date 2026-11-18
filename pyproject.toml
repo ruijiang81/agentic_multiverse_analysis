@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ama-mcp"
+version = "0.1.0"
+description = "Agentic multiverse analysis (AMA) of an empirical paper, as an MCP server and command line that drive Claude Code or Codex agent sessions"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Ruijiang Gao" }, { name = "Steven Chong Xiao" }]
+keywords = ["multiverse analysis", "robustness", "replication", "reproducibility", "empirical finance", "MCP", "agents"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "mcp>=2.3,<3",
+    "pyyaml>=6",
+    "pandas>=2",
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "statsmodels>=0.14",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+ama = "ama_mcp.cli:main"
+ama-mcp = "ama_mcp.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["ama_mcp*"]
+
+[tool.setuptools.package-data]
+# the pipeline as run in the study: role prompts, gate scripts and the documents agents read
+ama_mcp = ["core/*.md", "core/prompts/*.md", "core/scripts/*.py"]
+
+[tool.setuptools.exclude-package-data]
+ama_mcp = ["**/__pycache__/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"

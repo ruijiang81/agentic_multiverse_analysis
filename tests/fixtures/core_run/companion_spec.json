@@ -1,0 +1,15 @@
+{
+ "restored": [
+  {
+   "dimension": "window",
+   "kind": "held_fixed",
+   "audit_option(s)": [
+    "window_3y"
+   ],
+   "paper_option": "window_5y",
+   "audit_verdict": "VALID",
+   "audit_reason": "invented: overlaps a second invented shock"
+  }
+ ],
+ "n_cells": 100
+}

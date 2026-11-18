@@ -1,0 +1,19 @@
+{
+ "run_id": "core_run",
+ "finder": {
+  "status": "none_found",
+  "downloaded": [],
+  "evidence": [{"where": "https://example.org/search", "result": "nothing (invented)"}],
+  "web_search_available": false
+ },
+ "builder": {
+  "feasible": true,
+  "infeasible_reason": null,
+  "missing_sources": [],
+  "mode": "rebuilt",
+  "headline_outcome_available": true,
+  "main_files": ["data/panel.csv"],
+  "n_rows": 1200,
+  "calibration_summary": "invented: N matches"
+ }
+}
